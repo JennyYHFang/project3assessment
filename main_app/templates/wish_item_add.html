@@ -1,0 +1,14 @@
+
+{% block content %}
+
+<div class="add-item">
+<h1>Add Wish List Item</h1>
+<form action="" method="POST">
+  {% csrf_token %}
+  <table>
+    {{ form.as_table }} 
+  </table>
+  <input type="submit" value="Add Wish List Item" class="add-item">
+</form>
+</div>
+{% endblock %}
